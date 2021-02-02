@@ -1,0 +1,17 @@
+<h1>Hello Test</h1>
+
+<app-slide class="slide">
+  <div class="slide-item" *ngFor="let item of items" slideItem>
+    <h2>{{item.title}}</h2>
+    <p>
+      {{item.description}}
+    </p>
+    <button type="button">{{item.buttonText}}</button>
+  </div>
+</app-slide>
+
+<div class="action">
+  <button class="action-add" type="button" aria-label="adicionar item" (click)="addItem()">ADD ITEM</button>
+</div>
+
+
