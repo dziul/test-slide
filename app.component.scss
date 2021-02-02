@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #000;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  padding: 16px;
+}
+
+.slide {
+  flex: 1;
+  &-item {
+    line-height: 1.3;
+
+    h2 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.action {
+  margin: 16px;
+  display: flex;
+  .action-add {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 0;
+    outline: 0;
+    background: green;
+    color: white;
+  }
+}
