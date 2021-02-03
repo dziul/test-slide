@@ -1,0 +1,14 @@
+:host{
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+
+  ::ng-deep {
+    .slide-list {
+      flex: 1;
+      .slide-item {
+        width: 100%;
+      }
+    }
+  }
+}
