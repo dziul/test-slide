@@ -11,6 +11,10 @@ export const routes: Routes = [
   {
     path: 'example-b',
     component: ExampleBComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/example-a',
   }
 ];
 

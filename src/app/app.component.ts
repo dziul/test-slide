@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
 
-    this.links = pagesRoutes.map(route => route.path);
+    this.links = pagesRoutes.map(route => route.path).filter(path=> !path.includes('*'));
 
 
   }
