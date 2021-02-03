@@ -65,8 +65,10 @@ export class SlideComponent
 
       this.renderer.addClass(liElement, 'slide-item');
       this.renderer.setAttribute(liElement, 'tabindex', '-1');
+
       this.renderer.listen(liElement, 'focusin', () => {
-        console.log('item ' + index, liElement.getBoundingClientRect().left);
+
+        alert(`'focusin item ${index}`)
 
         this.slideItem = index;
       });

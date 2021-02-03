@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  background: #000;
+  box-sizing: border-box;
+}
+
+
+.body{
+  flex: 1;
+}
+
+
+.list-link{
+
+  ul{
+    display: flex;
+    padding: 16px;
+  }
+
+  li{
+    margin-right: 16px;
+    position: relative;
+  }
+
+  a {
+    color: #fff;
+
+    &.active{
+      opacity: .5;
+    }
+  }
+}
+
+
+
+
